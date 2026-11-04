@@ -93,7 +93,7 @@ jwt:
   # 토큰 서명에 쓰는 비밀 키. (secret_key → JwtProperties.secretKey, 느슨한 바인딩)
   # 수업용 값이다. 실제 서비스에서는 길고 무작위한 값을 환경 변수나 비밀
   # 저장소로 분리해야 한다. 이 키가 알려지면 누구나 유효한 토큰을 만들 수 있다.
-  secret_key: study-springboot
+  secret_key: ${SECRET_KEY}
 
 cloud:
   aws:
